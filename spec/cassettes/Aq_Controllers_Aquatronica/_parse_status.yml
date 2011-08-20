@@ -1,0 +1,46 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://username:password@localhost:80/rtMon.xml
+    body: !!null 
+    headers:
+      authorization:
+      - Basic Og==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: Ok
+    headers:
+      content-type:
+      - text/xml
+      content-length:
+      - '2237'
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<xmlResponse xml:lan=\"eng\">\r\n<login>\r\n
+      \ <status>0</status>\r\n</login>\r\n<result>0</result>\r\n<Monitor>\r\n<sensorList>\r\n<sensor>\r\n
+      \ <name>Temp - Tank</name>\r\n  <value>25.4°C</value>\r\n  <status>2</status>\r\n</sensor>\r\n<sensor>\r\n
+      \ <name>Temp - Quar</name>\r\n  <value>25.4°C</value>\r\n  <status>2</status>\r\n</sensor>\r\n<sensor>\r\n
+      \ <name>Level</name>\r\n  <value>OK</value>\r\n  <status>2</status>\r\n</sensor>\r\n<sensor>\r\n
+      \ <name>Redox</name>\r\n  <value>261mV</value>\r\n  <status>2</status>\r\n</sensor>\r\n<sensor>\r\n
+      \ <name>pH</name>\r\n  <value>8.04</value>\r\n  <status>2</status>\r\n</sensor>\r\n</sensorList>\r\n<powerList>\r\n<powerUnit
+      id=\"1\">\r\n  <name>Main Power Unit</name>\r\n  <plugList>\r\n    <plug id=\"1\">\r\n
+      \     <name>A</name>\r\n      <status>0</status>\r\n    </plug>\r\n    <plug
+      id=\"2\">\r\n      <name>Reef Brite</name>\r\n      <status>138</status>\r\n
+      \   </plug>\r\n    <plug id=\"3\">\r\n      <name>C</name>\r\n      <status>0</status>\r\n
+      \   </plug>\r\n    <plug id=\"4\">\r\n      <name>F-Sump Heater</name>\r\n      <status>0</status>\r\n
+      \   </plug>\r\n    <plug id=\"5\">\r\n      <name>E</name>\r\n      <status>0</status>\r\n
+      \   </plug>\r\n    <plug id=\"6\">\r\n      <name>Fan - Sump</name>\r\n      <status>0</status>\r\n
+      \   </plug>\r\n    <plug id=\"7\">\r\n      <name>G</name>\r\n      <status>0</status>\r\n
+      \   </plug>\r\n    <plug id=\"8\">\r\n      <name>Ethernet Power</name>\r\n
+      \     <status>138</status>\r\n    </plug>\r\n  </plugList>\r\n</powerUnit>\r\n<powerUnit
+      id=\"2\">\r\n  <name>Alt Power Unit</name>\r\n  <plugList>\r\n    <plug id=\"1\">\r\n
+      \     <name>A</name>\r\n      <status>0</status>\r\n    </plug>\r\n    <plug
+      id=\"2\">\r\n      <name>Red Dragon 8.3m</name>\r\n      <status>138</status>\r\n
+      \   </plug>\r\n    <plug id=\"3\">\r\n      <name>C</name>\r\n      <status>0</status>\r\n
+      \   </plug>\r\n    <plug id=\"4\">\r\n      <name>D</name>\r\n      <status>138</status>\r\n
+      \   </plug>\r\n    <plug id=\"5\">\r\n      <name>B-Sump Heater</name>\r\n      <status>0</status>\r\n
+      \   </plug>\r\n    <plug id=\"6\">\r\n      <name>F</name>\r\n      <status>0</status>\r\n
+      \   </plug>\r\n    <plug id=\"7\">\r\n      <name>G</name>\r\n      <status>0</status>\r\n
+      \   </plug>\r\n    <plug id=\"8\">\r\n      <name>Quar - Heater</name>\r\n      <status>0</status>\r\n
+      \   </plug>\r\n  </plugList>\r\n</powerUnit>\r\n</powerList>\r\n</Monitor>\r\n</xmlResponse>\r\n"
+    http_version: '1.1'

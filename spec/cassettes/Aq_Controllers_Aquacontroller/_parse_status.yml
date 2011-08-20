@@ -1,0 +1,30 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://username:password@localhost:80/cgi-bin/status.xml
+    body: !!null 
+    headers:
+      authorization:
+      - Basic YWRtaW46Z2FtZWN1YmU=
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml
+      cache-control:
+      - no-cache
+    body: ! "<?xml version=\"1.0\"?>\n<status software=\"3.40S_6B09\" hardware=\"1.0\">\n<hostname>aqua</hostname>\n<serial>AC3:02512</serial>\n<date>07/10/2011
+      19:54:04</date>\n<power><failed>none</failed>\n<restored>none</restored></power>\n<probes>\n<probe>\n
+      <name>Temp</name> <value>78.0</value>\n</probe><probe>\n <name>pH</name> <value>7.95</value>\n</probe><probe>\n
+      <name>ORP</name> <value>342</value>\n</probe></probes>\n<outlets>\n<outlet>\n
+      <name>AT5</name>\n <state>AON</state>\n</outlet>\n<outlet>\n <name>MH1</name>\n
+      <state>OFF</state>\n</outlet>\n<outlet>\n <name>HET</name>\n <state>AOF</state>\n</outlet>\n<outlet>\n
+      <name>WAV</name>\n <state>AON</state>\n</outlet>\n<outlet>\n <name>RTN</name>\n
+      <state>AON</state>\n</outlet>\n<outlet>\n <name>SKM</name>\n <state>AON</state>\n</outlet>\n<outlet>\n
+      <name>ECS</name>\n <state>AON</state>\n</outlet>\n<outlet>\n <name>ECM</name>\n
+      <state>AON</state>\n</outlet>\n<outlet>\n <name>ALM</name>\n <state>AOF</state>\n</outlet>\n<outlet>\n
+      <name>MON</name>\n <state>AON</state>\n</outlet>\n</outlets></status>\n"
+    http_version: '1.1'

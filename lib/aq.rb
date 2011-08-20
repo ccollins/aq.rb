@@ -1,0 +1,8 @@
+require 'aq/manufacturers/neptune'
+require 'aq/controller'
+require 'aq/controllers/aquacontroller'
+require 'aq/controllers/apex'
+require 'aq/controllers/aquatronica'
+require 'aq/controllers/reefkeeper'
+require 'aq/response'
+require 'net/http'

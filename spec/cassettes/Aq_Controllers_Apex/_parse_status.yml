@@ -1,0 +1,34 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://username:password@localhost:80/cgi-bin/status.xml
+    body: !!null 
+    headers:
+      authorization:
+      - Basic YWRtaW46MzQzMg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml
+      cache-control:
+      - no-cache
+    body: ! "<?xml version=\"1.0\"?>\n<status software=\"4.03_6A10\" hardware=\"1.0\">\n<hostname>SaltCube</hostname>\n<serial>AC4:06126</serial>\n<date>07/11/2011
+      15:06:58</date>\n<power><failed>06/17/2011 11:31:21</failed>\n<restored>06/17/2011
+      11:32:12</restored></power>\n<probes>\n<probe>\n<name>Temp</name> <value>77.8</value>\n</probe><probe>\n<name>pH</name>
+      <value>7.84</value>\n</probe><probe>\n<name>ORP</name> <value>000</value>\n</probe><probe>\n
+      <name>Amp_3</name> <value>03.0 </value>\n</probe></probes>\n<outlets>\n<outlet>\n
+      <name>VarSpd1_I1</name>\n <state>Lil4</state>\n</outlet>\n<outlet>\n <name>VarSpd2_I2</name>\n
+      <state>Lil3</state>\n</outlet>\n<outlet>\n <name>VarSpd3_I3</name>\n <state>Big1</state>\n</outlet>\n<outlet>\n
+      <name>VarSpd4_I4</name>\n <state>Big2</state>\n</outlet>\n<outlet>\n <name>SndAlm_I6</name>\n
+      <state>OFF</state>\n</outlet>\n<outlet>\n <name>SndWrn_I7</name>\n <state>OFF</state>\n</outlet>\n<outlet>\n
+      <name>EmailAlm_I5</name>\n <state>AOF</state>\n</outlet>\n<outlet>\n <name>Light1_3_1</name>\n
+      <state>AOF</state>\n</outlet>\n<outlet>\n <name>Light2_3_2</name>\n <state>AON</state>\n</outlet>\n<outlet>\n
+      <name>Pump1_3_3</name>\n <state>ON</state>\n</outlet>\n<outlet>\n <name>Pump2_3_4</name>\n
+      <state>ON</state>\n</outlet>\n<outlet>\n <name>Heater_3_5</name>\n <state>AOF</state>\n</outlet>\n<outlet>\n
+      <name>Chiller_3_6</name>\n <state>ON</state>\n</outlet>\n<outlet>\n <name>CO2_3_7</name>\n
+      <state>AOF</state>\n</outlet>\n<outlet>\n <name>Ozone_3_8</name>\n <state>ON</state>\n</outlet>\n</outlets></status>\n"
+    http_version: '1.1'

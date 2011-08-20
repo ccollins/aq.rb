@@ -1,0 +1,2 @@
+class Aq::Response
+end

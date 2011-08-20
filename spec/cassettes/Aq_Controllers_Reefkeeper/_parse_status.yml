@@ -1,0 +1,53 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://username:password@localhost:80/rss/rss.xml
+    body: !!null 
+    headers:
+      authorization:
+      - Basic Og==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml
+      cache-control:
+      - no-cache
+    body: ! "<rss version=\"2.0\">\r\n\t<channel>\r\n\t\t<title>ReefKeeper System
+      RSS Feed via NET Module</title>\r\n\t\t<link>http://www.digitalaquatics.com</link>\r\n\t\t<description></description>\r\n\t\t<language>en-us</language>\r\n\t\t<copyright>Copyright
+      2010 Digital Aquatics - All Rights Reserved.</copyright>\r\n\t\t<lastBuildDate>Mon,
+      11 Jul 11 14:44:19</lastBuildDate>\r\n\t\t<ttl>1</ttl>\t<item>\r<title>SL2:
+      Refugium, ID 07, Temp: Main PMPHTR </title>\r <description>\r Current Value:
+      80.7F\r</description>\r<guid>1</guid><pubDate>Mon, 11 Jul 11 14:44:19</pubDate>\r</item>\r<item>\r<title>SL2:
+      Refugium, ID 07, pH: HTR </title>\r <description>\r Current Value: 8.17\r</description>\r<guid>2</guid><pubDate>Mon,
+      11 Jul 11 14:44:19</pubDate>\r</item>\r<item>\r<title>PC4: MainLigt16000k, ID
+      01, CH3: 440nm </title>\r <description>\r Current Value: ON\r</description>\r<guid>4</guid><pubDate>Mon,
+      11 Jul 11 14:44:19</pubDate>\r</item>\r<item>\r<title>PC4: MainLigt16000k, ID
+      01, CH2: 453nm </title>\r <description>\r Current Value: ON\r</description>\r<guid>5</guid><pubDate>Mon,
+      11 Jul 11 14:44:19</pubDate>\r</item>\r<item>\r<title>PC4: MainLigt16000k, ID
+      01, CH1: 16000k </title>\r <description>\r Current Value: ON\r</description>\r<guid>6</guid><pubDate>Mon,
+      11 Jul 11 14:44:19</pubDate>\r</item>\r<item>\r<title>PC4: MainLigt16000k, ID
+      01, CH4: Refugium </title>\r <description>\r Current Value: ON\r</description>\r<guid>7</guid><pubDate>Mon,
+      11 Jul 11 14:44:19</pubDate>\r</item>\r<item>\r<title>PC4: MainPmpsMain PMPHT,
+      ID 02, CH2: HTR </title>\r <description>\r Current Value: OFF\r</description>\r<guid>8</guid><pubDate>Mon,
+      11 Jul 11 14:44:20</pubDate>\r</item>\r<item>\r<title>PC4: MainPmpsMain PMPHT,
+      ID 02, CH4: ATO </title>\r <description>\r Current Value: OFF\r</description>\r<guid>9</guid><pubDate>Mon,
+      11 Jul 11 14:44:20</pubDate>\r</item>\r<item>\r<title>PC4: MainPmpsMain PMPHT,
+      ID 02, CH1: Main PMPHTR </title>\r <description>\r Current Value: ON\r</description>\r<guid>10</guid><pubDate>Mon,
+      11 Jul 11 14:44:20</pubDate>\r</item>\r<item>\r<title>PC4: MainPmpsMain PMPHT,
+      ID 02, CH3: Skimmer </title>\r <description>\r Current Value: ON\r</description>\r<guid>11</guid><pubDate>Mon,
+      11 Jul 11 14:44:20</pubDate>\r</item>\r<item>\r<title>PC4: MainLigt16000k, ID
+      01, Amps </title>\r <description>\r Current Value: 1.7A\r</description>\r<guid>12</guid><pubDate>Mon,
+      11 Jul 11 14:44:20</pubDate>\r</item>\r<item>\r<title>PC4: MainPmpsMain PMPHT,
+      ID 02, Amps </title>\r <description>\r Current Value: 0.5A\r</description>\r<guid>13</guid><pubDate>Mon,
+      11 Jul 11 14:44:20</pubDate>\r</item>\r<item>\r<title>SL1: Breeder, ID 04, Temp:
+      BreedTmpBreedPh </title>\r <description>\r Current Value: 77.6F\r</description>\r<guid>14</guid><pubDate>Mon,
+      11 Jul 11 14:44:20</pubDate>\r</item>\r<item>\r<title>SL1: Breeder, ID 04, pH:
+      BreedPh </title>\r <description>\r Current Value: 8.22\r</description>\r<guid>15</guid><pubDate>Mon,
+      11 Jul 11 14:44:20</pubDate>\r</item>\r<item>\r<title>SL1: Breeder, ID 04, ORP:
+      BreedORPBreeder </title>\r <description>\r Current Value: 372mV\r</description>\r<guid>16</guid><pubDate>Mon,
+      11 Jul 11 14:44:21</pubDate>\r</item>\r\r\n\t</channel>\r\n</rss>\r\n"
+    http_version: '1.1'
