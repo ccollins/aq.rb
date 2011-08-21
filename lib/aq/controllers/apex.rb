@@ -1,3 +1,7 @@
-class Aq::Controllers::Apex < Aq::Controller
-  include Neptune
+module Aq
+  module Controllers
+    class Apex < Aq::Controller
+      include Neptune
+    end
+  end
 end
