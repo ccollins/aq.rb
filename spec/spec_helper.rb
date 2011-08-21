@@ -1,7 +1,4 @@
 require 'rubygems'
-require 'bundler'
-Bundler.setup
-
 require 'rspec'
 require 'vcr'
 
@@ -16,6 +13,9 @@ VCR.config do |c|
   c.default_cassette_options = { :record => :once }
 end
 
+require 'nokogiri'
+require 'chronic'
+require 'timecop'
 require File.join(File.dirname(__FILE__), "..", "lib", "aq")
 
 # Requires supporting files with custom matchers and macros, etc,
